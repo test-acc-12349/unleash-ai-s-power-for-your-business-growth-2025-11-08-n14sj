@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unleash AI's Power for Your Business Growth - Intelligent workflow orchestration, predictive analytics, and seamless system integration for modern enterprises.">
+    <meta name="keywords" content="AI, Business Growth, Automation, Analytics, Integration">
+    <meta name="author" content="NXSys">
+    <title>Unleash AI's Power for Your Business Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .smooth-transition {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                    <i class="fas fa-brain text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">NXSys AI</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">FAQ</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">About</a>
+            </div>
+
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:flex">
+                <a href="https://test.com" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg smooth-transition hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-gray-700 hover:text-blue-600 smooth-transition">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+                <div class="flex flex-col space-y-4 p-6">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">FAQ</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 smooth-transition font-medium">About</a>
+                    <a href="https://test.com" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg smooth-transition hover:scale-105 text-center">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-slate-50 via-white to-slate-50 overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col space-y-8">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-900 mb-6">
+                            Unleash AI's Power for Your <span class="gradient-text">Business Growth</span>
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl">
+                            Automate the mundane, innovate the extraordinary. Transform your operations with cutting-edge AI solutions designed for modern enterprises. Experience unprecedented efficiency, data-driven decision making, and limitless scalability.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://test.com" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl smooth-transition hover:scale-105 text-center">
+                            Start Your AI Journey
+                        </a>
+                        <button class="border-2 border-gray-300 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:border-blue-600 hover:text-blue-600 smooth-transition hover:bg-blue-50">
+                            <i class="fas fa-play mr-2"></i> Watch Demo
+                        </button>
+                    </div>
+
+                    <div class="flex flex-wrap gap-6 pt-4">
+                        <div class="flex items-center space-x-2">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 bg-blue-500 rounded-full border-2 border-white"></div>
+                                <div class="w-8 h-8 bg-purple-500 rounded-full border-2 border-white"></div>
+                                <div class="w-8 h-8 bg-pink-500 rounded-full border-2 border-white"></div>
+                            </div>
+                            <span class="text-sm text-gray-600 font-medium">500+ Companies Trust Us</span>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="text-sm text-gray-600 font-medium ml-2">4.9/5 Rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex justify-center items-center">
+                    <div class="relative w-full h-96">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-3xl opacity-10 blur-2xl"></div>
+                        <div class="relative bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                </div>
+                                <div class="space-y-3 pt-4">
+                                    <div class="h-3 bg-gray-200 rounded-full w-3/4"></div>
+                                    <div class="h-3 bg-gray-200 rounded-full w-full"></div>
+                                    <div class="h-3 bg-gray-200 rounded-full w-5/6"></div>
+                                    <div class="h-3 bg-blue-200 rounded-full w-2/3"></div>
+                                </div>
+                                <div class="pt-6 space-y-2">
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-check text-green-500"></i>
+                                        <span class="text-sm text-gray-600">Real-time Processing</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-check text-green-500"></i>
+                                        <span class="text-sm text-gray-600">99.9% Uptime</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-check text-green-500"></i>
+                                        <span class="text-sm text-gray-600">Enterprise Security</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Powerful Features Built for Success
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Discover the comprehensive suite of AI-powered tools designed to revolutionize your business operations and drive exponential growth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Intelligent Workflow Orchestration -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:border-blue-300 hover:shadow-xl smooth-transition hover:scale-105 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:from-blue-200 group-hover:to-blue-100 smooth-transition">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Intelligent Workflow Orchestration</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Automate complex business processes with our advanced AI-driven workflow engine. Seamlessly coordinate multiple systems and tasks in real-time, eliminating manual bottlenecks and accelerating your operational velocity. Our intelligent orchestration learns from patterns and continuously optimizes performance.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Multi-step process automation</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Real-time task coordination</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Adaptive learning algorithms</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Predictive Analytics -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:border-purple-300 hover:shadow-xl smooth-transition hover:scale-105 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl flex items-center justify-center mb-6 group-hover:from-purple-200 group-hover:to-purple-100 smooth-transition">
+                        <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Predictive Analytics Engine</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Transform raw data into actionable intelligence with our advanced predictive analytics platform. Leverage machine learning models to forecast trends, identify opportunities, and mitigate risks before they impact your business. Make informed decisions backed by data-driven insights.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Advanced ML models</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Trend forecasting</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Risk assessment</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Seamless System Integration -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:border-pink-300 hover:shadow-xl smooth-transition hover:scale-105 group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-pink-100 to-pink-50 rounded-2xl flex items-center justify-center mb-6 group-hover:from-pink-200 group-hover:to-pink-100 smooth-transition">
+                        <svg class="w-7 h-7 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.658 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Seamless System Integration</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Connect your entire technology stack effortlessly. Our platform integrates with 500+ enterprise applications and services, ensuring unified data flow across your organization. No more data silos—achieve true operational connectivity and synchronization.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>500+ pre-built integrations</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Custom API connectors</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Real-time data sync</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-24 bg-gradient-to-br from-slate-50 to-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Transform Your Business Operations
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Experience tangible results that directly impact your bottom line and competitive advantage in the market.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1: Operational Efficiency -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl smooth-transition group">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-blue-100 group-hover:bg-blue-200 smooth-transition">
+                                <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Boost Operational Efficiency</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                Reduce manual workload by up to 80% and accelerate process completion times. Our AI automation handles repetitive tasks instantly, allowing your team to focus on high-value strategic initiatives. Experience faster turnaround times, reduced errors, and increased productivity across all departments.
+                            </p>
+                            <div class="bg-blue-50 rounded-lg p-4">
+                                <p class="text-sm font-semibold text-blue-900">Average Results:</p>
+                                <ul class="text-sm text-blue-800 mt-2 space-y-1">
+                                    <li>• 80% reduction in manual tasks</li>
+                                    <li>• 60% faster process execution</li>
+                                    <li>• 90% error reduction</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Data-Driven Insights -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl smooth-transition group">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-purple-100 group-hover:bg-purple-200 smooth-transition">
+                                <svg class="h-6 w-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Gain Data-Driven Insights</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                Unlock hidden patterns in your data and make decisions with confidence. Our advanced analytics platform provides real-time dashboards, predictive models, and actionable recommendations. Transform complex data into clear, understandable insights that drive strategic business decisions.
+                            </p>
+                            <div class="bg-purple-50 rounded-lg p-4">
+                                <p class="text-sm font-semibold text-purple-900">Key Metrics:</p>
+                                <ul class="text-sm text-purple-800 mt-2 space-y-1">
+                                    <li>• Real-time data visualization</li>
+                                    <li>• Predictive accuracy up to 95%</li>
+                                    <li>• Automated reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Hyper-Scalability -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl smooth-transition group">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-pink-100 group-hover:bg-pink-200 smooth-transition">
+                                <svg class="h-6 w-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Achieve Hyper-Scalability</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                Grow without limits. Our cloud-native architecture scales seamlessly with your business needs, handling millions of transactions per second without performance degradation. Whether you're processing 100 or 100 million records, our platform maintains consistent performance and reliability.
+                            </p>
+                            <div class="bg-pink-50 rounded-lg p-4">
+                                <p class="text-sm font-semibold text-pink-900">Performance:</p>
+                                <ul class="text-sm text-pink-800 mt-2 space-y-1">
+                                    <li>• 99.9% uptime SLA</li>
+                                    <li>• Auto-scaling infrastructure</li>
+                                    <li>• Global CDN delivery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Loved by Industry Leaders
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    See what forward-thinking companies are achieving with our AI platform.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-gray-100 hover:border-blue-300 hover:shadow-xl smooth-transition">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "NXSys AI transformed our operations overnight. We automated 70% of our manual processes, reduced processing time from days to hours, and our team can now focus on strategic initiatives. The ROI was evident within the first month."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            SJ
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Johnson</p>
+                            <p class="text-sm text-gray-600">VP of Operations, TechCorp Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-gray-100 hover:border-purple-300 hover:shadow-xl smooth-transition">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "The predictive analytics capabilities are exceptional. We now forecast demand with 94% accuracy, optimize inventory in real-time, and have reduced carrying costs by $2.3M annually. This platform is a game-changer for supply chain management."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            MC
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Michael Chen</p>
+                            <p class="text-sm text-gray-600">Supply Chain Director, Global Logistics Inc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-gray-100 hover:border-pink-300 hover:shadow-xl smooth-transition">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "Integration was seamless. Within two weeks, we had connected all our legacy systems and modern cloud applications. The unified data platform has given us insights we never had before. Customer satisfaction has improved by 35%."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            ER
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Emily Rodriguez</p>
+                            <p class="text-sm text-gray-600">CTO, Digital Transformation Services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-gray-100 hover:border-green-300 hover:shadow-xl smooth-transition">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "The scalability is incredible. We went from processing 50K transactions daily to 5M without any infrastructure changes. The platform handles everything automatically. Support team is responsive and knowledgeable. Highly recommended for enterprises."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            DA
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">David Anderson</p>
+                            <p class="text-sm text-gray-600">Infrastructure Lead, FinTech Innovations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-24 bg-gradient-to-br from-slate-50 to-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
+                    About NXSys AI
+                </h2>
+
+                <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-100">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+                            <p class="text-gray-700 leading-relaxed text-lg">
+                                Founded in 2019 by a team of AI researchers and enterprise software veterans, NXSys AI emerged from a simple observation: most organizations struggle to harness the power of artificial intelligence due to complexity, integration challenges, and lack of practical expertise. We set out to democratize AI, making it accessible and actionable for businesses of all sizes. Starting with a small team of five passionate engineers in Silicon Valley, we've grown to serve over 500 companies across 45 countries, processing billions of transactions daily. Our platform is built on years of research, real-world implementation experience, and continuous feedback from our customers who trust us to power their most critical operations.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission & Values</h3>
+                            <p class="text-gray-700 leading-relaxed text-lg">
+                                Our mission is to empower organizations to achieve unprecedented operational excellence through intelligent automation and data-driven decision-making. We believe that AI should amplify human potential, not replace it. We're committed to building ethical, transparent, and secure AI solutions that respect privacy and promote responsible innovation. Our core values—Excellence, Integrity, Innovation, and Impact—guide every decision we make. We invest heavily in research and development to stay at the forefront of AI technology, maintain the highest security standards to protect our customers' data, and foster a culture of continuous learning and improvement. At NXSys AI, we're not just building software; we're partnering with our customers to transform their businesses and create lasting value.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-6 border-t border-gray-200 pt-8">
+                            <div class="text-center">
+                                <p class="text-4xl font-bold text-blue-600">500+</p>
+                                <p class="text-gray-600 mt-2">Enterprise Customers</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-4xl font-bold text-purple-600">45</p>
+                                <p class="text-gray-600 mt-2">Countries Served</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-4xl font-bold text-pink-600">99.9%</p>
+                                <p class="text-gray-600 mt-2">Uptime SLA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Everything you need to know about NXSys AI and how it can transform your business.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-200 hover:border-blue-300 smooth-transition overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-slate-50 smooth-transition group">
+                        <span class="text-lg font-semibold text-gray-900 group-hover:text-blue-600 smooth-transition">
+                            How long does implementation typically take?
+                        </span>
+                        <svg class="faq-icon w-6 h-6 text-gray-600 group-hover:text-blue-600 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 leading-relaxed border-t border-gray-200">
+                        <p>
+                            Implementation timelines vary based on complexity and your existing infrastructure. For most organizations, we can have a basic implementation running within 2-3 weeks. A full enterprise deployment with all integrations typically takes 6-8 weeks. Our dedicated implementation team works closely with you to minimize disruption and ensure a smooth transition. We provide comprehensive training, documentation, and ongoing support throughout the process.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-200 hover:border-purple-300 smooth-transition overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-slate-50 smooth-transition group">
+                        <span class="text-lg font-semibold text-gray-900 group-hover:text-purple-600 smooth-transition">
+                            What security measures are in place to protect our data?
+                        </span>
+                        <svg class="faq-icon w-6 h-6 text-gray-600 group-hover:text-purple-600 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 leading-relaxed border-t border-gray-200">
+                        <p>
+                            Security is our top priority. We implement military-grade encryption (AES-256) for data at rest and in transit. All data centers are SOC 2 Type II certified and comply with GDPR, HIPAA, and other major regulatory standards. We conduct regular third-party security audits, maintain 24/7 monitoring, and have incident response protocols in place. Your data is isolated in dedicated environments with role-based access controls, and we provide detailed audit logs for full transparency and compliance tracking.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-200 hover:border-pink-300 smooth-transition overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-slate-50 smooth-transition group">
+                        <span class="text-lg font-semibold text-gray-900 group-hover:text-pink-600 smooth-transition">
+                            Can we integrate NXSys AI with our existing systems?
+                        </span>
+                        <svg class="faq-icon w-6 h-6 text-gray-600 group-hover:text-pink-600 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 leading-relaxed border-t border-gray-200">
+                        <p>
+                            Absolutely! We have pre-built connectors for 500+ popular enterprise applications including Salesforce, SAP, Oracle, Microsoft Dynamics, Workday, and more. For systems without pre-built connectors, our flexible API and webhook system allow custom integration. Our technical team can assist with complex integrations, and we provide comprehensive documentation and SDKs for developers. Most customers are able to connect their entire tech stack without any custom development required.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-200 hover:border-green-300 smooth-transition overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-slate-50 smooth-transition group">
+                        <span class="text-lg font-semibold text-gray-900 group-hover:text-green-600 smooth-transition">
+                            What kind of support do you provide?
+                        </span>
+                        <svg class="faq-icon w-6 h-6 text-gray-600 group-hover:text-green-600 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 leading-relaxed border-t border-gray-200">
+                        <p>
+                            We provide comprehensive support through multiple channels: 24/7 email and chat support, phone support during business hours, and a dedicated success manager for enterprise customers. Our support team has average response times under 2 hours for critical issues. We also offer extensive documentation, video tutorials, webinars, and a community forum where customers can share best practices and solutions. Additionally, we provide quarterly business reviews and optimization recommendations to help you maximize your ROI.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-200 hover:border-indigo-300 smooth-transition overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-slate-50 smooth-transition group">
+                        <span class="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 smooth-transition">
+                            What is the pricing model and are there any hidden fees?
+                        </span>
+                        <svg class="faq-icon w-6 h-6 text-gray-600 group-hover:text-indigo-600 smooth-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-700 leading-relaxed border-t border-gray-200">
+                        <p>
+                            We offer flexible pricing based on usage, features, and deployment model. Our transparent pricing includes all core features with no hidden fees. You only pay for what you use—compute resources, storage, and API calls are metered and billed monthly. Enterprise customers receive custom pricing with volume discounts, dedicated infrastructure, and premium support. We offer a 30-day free trial so you can evaluate the platform risk-free. Contact our sales team for a personalized quote based on your specific requirements and scale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-20 md:py-24 bg-gradient-to-r from-blue-600 to-purple-600 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                Join 500+ leading companies already leveraging NXSys AI to achieve unprecedented operational excellence. Start your free trial today and experience the difference intelligent automation can make.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://test.com" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl smooth-transition hover:scale-105 text-center">
+                    Start Free Trial
+                </a>
+                <a href="mailto:ecomm@nxsys.com.au" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-blue-600 smooth-transition text-center">
+                    <i class="fas fa-envelope mr-2"></i> Contact Sales
+                </a>
+            </div>
+
+            <p class="text-blue-100 text-sm mt-6">
+                No credit card required • 30-day free trial • Cancel anytime
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1: Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">NXSys AI</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Empowering businesses with intelligent automation and data-driven insights for unprecedented operational excellence.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">
+                            <i class="fab fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">
+                            <i class="fab fa-facebook text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Product -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-400 smooth-transition">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 smooth-transition">Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Security</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Roadmap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400 smooth-transition">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-blue-400 smooth-transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Legal -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-blue-400 smooth-transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-blue-400 smooth-transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Compliance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 smooth-transition">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2025 NXSys AI. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                        <p class="text-gray-400 text-sm">Contact: <a href="mailto:ecomm@nxsys.com.au" class="text-blue-400 hover:text-blue-300">ecomm@nxsys.com.au</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
